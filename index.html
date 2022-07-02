@@ -5,18 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Freebird - Simple Debt Tracker</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 15px;
+        font-size: 15px;
+      }
+
+      nav {
+        float: left;
+        margin: 0;
+        overflow: hidden;
+        text-align: left;
+      }
+
+      div div ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      div div ul li {
+        display: inline-block;
+        list-style-type: none;
+      }
+
+      div > div > ul > li > a {
+        color: cornflowerblue;
+        font-size: 30px;
+        display: block;
+        line-height: 2em;
+        padding: 0.5em 1em;
+        text-decoration: none;
+      }
+
+      .logo-img {
+        float: left;
+        position: relative;
+        margin: 10px 15px 15px 10px;
+      }
+
+      .logo-title {
+        color: cornflowerblue;
+      }
+
+      .navigator {
+        background: #333;
+        overflow: hidden;
+        display: flex;
+      }
+
+      a:hover {
+        cursor: pointer;
+      }
+
+      .about {
+        background: antiquewhite;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        padding: 20px;
+      }
+      .image {
+        flex: 1;
+        margin: 0;
+      }
+      .image:first-child {
+        margin-right: 20px;
+      }
+      h1:first-child {
+        color: cornflowerblue;
+      }
+
+      button {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        vertical-align: top;
+        height: 50px;
+        width: auto;
+      }
+
+      #close-image img {
+        display: block;
+      }
+    </style>
   </head>
+
   <body>
-    <nav>
-      <ul>
-        <li><a href="https://google.com">Home</a></li>
-        <li><a href="https://google.com">About us</a></li>
-        <li><a href="https://google.com">Contact us</a></li>
-      </ul>
-    </nav>
-    <div>
-      <h1>#1 Accounting app to manage your lending business.</h1>
-      <h3>Put your lending business on auto-pilot.</h3>
+    <div class="navigator">
+      <div class="image img">
+        <img
+          class="logo-img"
+          src="./icon-freeBird.png"
+          width="50px"
+          height="50px"
+        />
+
+        <h1 class="logo-title">Freebird</h1>
+      </div>
+
+      <div class="image navbar">
+        <ul>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="">Pricing</a>
+          </li>
+          <li>
+            <a href="">Testimonials</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="about">
+      <div>
+        <h1>#1 Accounting app</h1>
+        <h1>to manage your lending business.</h1>
+        <h3>Put your lending business on auto-pilot.</h3>
+        <button id="close-image-ios"><img src="./dark-ios.svg" /></button>
+        <button id="close-image-and"><img src="./dark-and.svg" /></button>
+      </div>
+      <img src="./Main.png" width="20%" height="auto" />
     </div>
   </body>
 </html>
